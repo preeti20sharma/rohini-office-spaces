@@ -2,10 +2,10 @@
 :root {
     --primary: #f6f8fc;
     --surface: #ffffff;
-    --accent: #C9A24D;
+    --accent: #05223f;
     --dark: #0B1C2D;
     --text: #1C1C1C;
-    --cta: #1ABC9C;
+    --cta: #05223f;
     --text-muted: #6f7a87;
     --shadow: 0 20px 60px rgba(15, 35, 50, 0.12);
     --radius: 16px;
@@ -131,7 +131,7 @@ img {
     padding: 8px 14px;
     background: rgba(255, 255, 255, 0.12);
     border-radius: 10px;
-    color: #C9A24D;
+    color: #9fd2f0;
     font-weight: 600;
     letter-spacing: 0.4px;
     backdrop-filter: blur(6px);
@@ -144,7 +144,7 @@ img {
     height: 5px;
     display: inline-block;
     border-radius: 50%;
-    background: #C9A24D;
+    background: #5a91b0;
     position: relative;
     box-shadow: 0 0 0 0 #c5a04f;
     animation: pulse 1.6s infinite;
@@ -174,7 +174,7 @@ img {
 }
 
 .btn-home {
-    background-color: #C9A24D;
+    background-color: #5a91b0;
     color: #fff;
     border: none;
     border-radius: 8px;
@@ -185,13 +185,13 @@ img {
 }
 
 .btn-home:hover {
-    background-color: #C9A24D;
+    background-color: #130240;
     color: #fff;
     transform: translateY(-2px);
 }
 
 .btn-cta {
-    background-color: #0b1c2d;
+    background-color: #05223f;
     color: #fff;
     border: none;
     border-radius: 8px;
@@ -261,7 +261,7 @@ img {
 .section-tag {
     display: inline-block;
     padding: 8px 14px;
-    background: rgba(201, 162, 77, 0.12);
+    background: #daecf5;
     color: var(--accent);
     border-radius: 12px;
     letter-spacing: 0.4px;
@@ -1025,8 +1025,8 @@ footer {
     font-size: 15px;
     font-weight: 800;
     letter-spacing: 0.4px;
-    color: #111;
-    background: #C9A24D;
+    color: #fff;
+    background: #0B1D39;
     transition: 0.25s ease;
 }
 
