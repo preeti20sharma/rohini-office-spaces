@@ -523,24 +523,17 @@ img {
 }
 
 .brand-card {
-    background: #fff;
-    color: var(--dark);
-    border: 1px solid rgba(12, 28, 45, 0.08);
-    border-radius: 14px;
     display: grid;
     place-items: center;
-    height: 110px;
-    font-weight: 700;
-    letter-spacing: 0.2px;
-    transition: var(--transition);
-    box-shadow: 0 12px 26px rgba(11, 28, 45, 0.08);
+    height: 80px;
 }
 
-.brand-card:hover {
-    transform: translateY(-6px);
-    border-color: var(--accent);
-    background: rgba(201, 162, 77, 0.06);
+.brand-card img {
+    width: 120px;
+    height: 80px;
 }
+
+
 
 .rera-card {
     padding: 20px;
@@ -1135,5 +1128,143 @@ footer {
 @media (max-width: 767px) {
     body {
         padding-bottom: 80px;
+    }
+}
+
+@media(min-width:991px) {
+    .map-img {
+        width: 500px;
+        height: 430px;
+    }
+}
+
+/* ===========================
+   UES BRANDS SECTION
+=========================== */
+.ues-brands-section {
+    padding: 70px 0;
+    background: #f7f9ff;
+    overflow: hidden;
+}
+
+.ues-brands-head {
+    margin-bottom: 25px;
+}
+
+.ues-brands-tag {
+    display: inline-block;
+    padding: 8px 14px;
+    font-size: 14px;
+    font-weight: 600;
+    border-radius: 999px;
+    background: rgba(32, 120, 59, 0.12);
+    color: #20783B;
+    letter-spacing: 0.3px;
+}
+
+.ues-brands-title {
+    margin-top: 12px;
+    font-size: 34px;
+    font-weight: 800;
+    color: #111827;
+}
+
+.ues-brands-subtitle {
+    margin-top: 10px;
+    font-size: 16px;
+    color: #6b7280;
+    max-width: 650px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Swiper Space */
+.ues-brands-swiper {
+    padding: 25px 0 40px;
+}
+
+/* Brand Cards */
+.ues-brand-card {
+    background: #ffffff;
+    border-radius: 18px;
+    border: 1px solid rgba(17, 24, 39, 0.08);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.06);
+    height: 115px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 18px;
+    transition: all 0.35s ease;
+    cursor: pointer;
+}
+
+.ues-brand-card img {
+    max-height: 55px;
+    max-width: 160px;
+    width: auto;
+    object-fit: contain;
+    filter: grayscale(100%);
+    opacity: 0.9;
+    transition: all 0.35s ease;
+}
+
+.ues-brand-card:hover {
+    transform: translateY(-8px);
+    border-color: rgba(32, 120, 59, 0.35);
+    box-shadow: 0 18px 45px rgba(32, 120, 59, 0.12);
+}
+
+.ues-brand-card:hover img {
+    filter: grayscale(0%);
+    opacity: 1;
+    transform: scale(1.03);
+}
+
+/* Swiper Buttons */
+.ues-brands-prev,
+.ues-brands-next {
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    background: #ffffff;
+    box-shadow: 0 10px 22px rgba(0, 0, 0, 0.08);
+    transition: 0.3s ease;
+}
+
+.ues-brands-prev::after,
+.ues-brands-next::after {
+    font-size: 14px;
+    font-weight: 800;
+    color: #20783B;
+}
+
+.ues-brands-prev:hover,
+.ues-brands-next:hover {
+    transform: scale(1.06);
+}
+
+/* Pagination */
+.ues-brands-pagination .swiper-pagination-bullet {
+    opacity: 0.3;
+}
+
+.ues-brands-pagination .swiper-pagination-bullet-active {
+    background: #20783B;
+    opacity: 1;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .ues-brands-title {
+        font-size: 26px;
+    }
+
+    .ues-brand-card {
+        height: 100px;
+    }
+
+    .ues-brand-card img {
+        max-height: 48px;
+        max-width: 135px;
     }
 }
